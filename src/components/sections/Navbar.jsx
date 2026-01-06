@@ -4,7 +4,7 @@ export default function Navbar({ darkMode, setDarkMode, isMenuOpen, setIsMenuOpe
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="text-3xl font-bold text-primary">Abdul Gaffar</span>
+            <span className="text-3xl font-bold text-primary">Gaffar Ali</span>
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
