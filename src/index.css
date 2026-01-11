@@ -1,37 +1,38 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: #ff014f;
-  --color-body: #e9f1fb;
-  --color-text: #314158;
-  --shadow-primary: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    --color-primary: #ff014f;
+    --color-body: #e9f1fb;
+    --color-text: #314158;
+    --shadow-primary: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 @layer components {
-  .glass-sm {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.19);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0.8px);
-    -webkit-backdrop-filter: blur(0.8px);
-  }
-  /* .glass-md {
+    .glass-sm {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.19);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.8px);
+        -webkit-backdrop-filter: blur(0.8px);
+    }
+    /* .glass-md {
     background: rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(9px);
   } */
-  .glass-md {
-    background: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border-radius: 12px;
-  }
+    .glass-md {
+        background: rgba(255, 255, 255, 0.18);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border-radius: 12px;
+    }
 
-  .glass-xl {
-    background: rgba(0, 0, 0, 0.23);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13.6px);
-    -webkit-backdrop-filter: blur(13.6px);
-  }
+    .glass-xl {
+        background: rgba(0, 0, 0, 0.23);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.6px);
+        -webkit-backdrop-filter: blur(13.6px);
+    }
 }

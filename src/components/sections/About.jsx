@@ -30,7 +30,7 @@ export default function About() {
         <section id="about" className="py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-300 mb-4">About Me</h2>
                     <div className="w-20 h-1 bg-primary mx-auto"></div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -40,15 +40,15 @@ export default function About() {
                         <img src={GaffarAli} alt="About Me" className="rounded-lg shadow-xl z-10 relative object-cover w-full h-full" />
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Who am I?</h3>
-                        <p className="text-gray-700 mb-6">I'm a full-stack web developer with a passion for building modern, user-friendly websites and web applications. I specialize in both frontend and backend development, creating seamless digital experiences from start to finish. Whether it's designing responsive interfaces or building powerful server-side functionality, I focus on clean code, performance, and scalability.</p>
-                        <p className="text-gray-700 mb-6">With experience in technologies like PHP, Laravel, Javascript and React. I’ve helped bring ideas to life for businesses, startups, and personal projects. I’m always eager to learn, solve problems, and turn complex requirements into functional, beautiful web solutions.</p>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">My Skills</h3>
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-300 mb-4">Who am I?</h3>
+                        <p className="text-gray-700 dark:text-gray-400 mb-6">I'm a full-stack web developer with a passion for building modern, user-friendly websites and web applications. I specialize in both frontend and backend development, creating seamless digital experiences from start to finish. Whether it's designing responsive interfaces or building powerful server-side functionality, I focus on clean code, performance, and scalability.</p>
+                        <p className="text-gray-700 dark:text-gray-400 mb-6">With experience in technologies like PHP, Laravel, Javascript and React. I’ve helped bring ideas to life for businesses, startups, and personal projects. I’m always eager to learn, solve problems, and turn complex requirements into functional, beautiful web solutions.</p>
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-300 mb-4">My Skills</h3>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             {skills.map((skill, index) => (
                                 <div key={index} className={`glass-sm rounded-sm p-2 flex items-center gap-3 uppercase font-medium`}>
                                     <img src={skill.icon} alt="" className="w-8" />
-                                    <span>{skill.name}</span>
+                                    <span className="text-gray-900 dark:text-gray-400">{skill.name}</span>
                                 </div>
                             ))}
                         </div>

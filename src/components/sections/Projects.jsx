@@ -54,9 +54,9 @@ export default function Projects({ darkMode }) {
         <section id="projects" className={`py-20`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Projects</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-300 mb-4">My Projects</h2>
                     <div className="w-20 h-1 bg-primary mx-auto"></div>
-                    <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">Here are some of my recent projects. Each one was built to solve a specific problem or explore new technologies.</p>
+                    <p className="mt-4 text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">Here are some of my recent projects. Each one was built to solve a specific problem or explore new technologies.</p>
                 </div>
                 <div className="mb-8 flex justify-center">
                     <div className="px-5 py-1.5 bg-white shadow-primary flex gap-4 relative rounded-sm overflow-hidden">
@@ -69,7 +69,7 @@ export default function Projects({ darkMode }) {
                             <div className="relative h-64 overflow-hidden">
                                 <img src={project.image} alt={project.title} className="w-full h-full object-cover object-top" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                                    <div className="p-6 text-white">
+                                    <div className="p-6 text-gray-100 ">
                                         <h3 className="text-2xl font-bold">{project.title}</h3>
                                         <div className="flex flex-wrap gap-2 mt-2">
                                             {project.technologies.map((tech, index) => (
@@ -82,7 +82,7 @@ export default function Projects({ darkMode }) {
                                 </div>
                             </div>
                             <div className="p-6">
-                                <p className="text-gray-700 mb-4">{project.description}</p>
+                                <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
                                 <div className="flex justify-between">
                                     <a href={project.liveLink} className="text-primary hover:text-indigo-800 font-medium flex items-center cursor-pointer">
                                         <i className="fas fa-external-link-alt mr-2"></i> Live Demo

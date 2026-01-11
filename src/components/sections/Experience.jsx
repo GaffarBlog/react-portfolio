@@ -32,9 +32,9 @@ export default function Experience() {
         <section id="experience" className="py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Work Experience</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-300 mb-4">Work Experience</h2>
                     <div className="w-20 h-1 bg-primary mx-auto"></div>
-                    <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">My professional journey through various roles and companies in the tech industry.</p>
+                    <p className="mt-4 text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">My professional journey through various roles and companies in the tech industry.</p>
                 </div>
                 <div className="relative">
                     {/* Timeline line */}
@@ -52,15 +52,15 @@ export default function Experience() {
                                     <div className="md:hidden w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4 mx-auto">
                                         <i className={`fas fa-${exp.logo} text-white`}></i>
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900">{exp.position}</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 dark:text-gray-300">{exp.position}</h3>
                                     <div className="flex items-center justify-between mt-1 mb-3">
-                                        <span className="text-indigo-600 font-medium">{exp.company}</span>
-                                        <span className="text-gray-500 text-sm">{exp.period}</span>
+                                        <span className="text-indigo-600 dark:text-gray-400 font-medium">{exp.company}</span>
+                                        <span className="text-gray-500 dark:text-gray-400  text-sm">{exp.period}</span>
                                     </div>
-                                    <p className="text-gray-700 mb-4">{exp.description}</p>
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4">{exp.description}</p>
                                     <div className="flex flex-wrap gap-2">
                                         {exp.technologies.map((tech, techIndex) => (
-                                            <span key={techIndex} className="px-3 py-1 bg-primary/10 text-primary font-medium rounded-sm text-xs tracking-wide">
+                                            <span key={techIndex} className="px-3 py-1 bg-primary/10 dark:bg-primary/50 dark:text-gray-300 text-primary font-medium rounded-sm text-xs tracking-wide">
                                                 {tech}
                                             </span>
                                         ))}

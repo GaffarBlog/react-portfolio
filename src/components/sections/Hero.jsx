@@ -11,14 +11,14 @@ export default function Hero() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="">
-                        <h1 className="text-md font-bold mb-10">
+                        <h1 className="text-md font-bold mb-10 dark:text-gray-300">
                             Hello, I'm <span className="text-primary">Abdul Gaffar</span>
                         </h1>
-                        <div className="text-4xl md:text-5xl font-medium mb-6">
+                        <div className="text-4xl md:text-5xl font-medium mb-6 dark:text-gray-300">
                             <span className="text-primary">Full-Stack Developer</span> <br />
                             Turning Ideas into Reality
                         </div>
-                        <p className="text-lg md:text-md mb-8 text-slate-500 max-w-lg">From clean, easy-to-use designs to strong and reliable backends — I build complete websites that work smoothly and deliver real results.</p>
+                        <p className="text-lg md:text-md mb-8 text-slate-500 dark:text-gray-400 max-w-lg">From clean, easy-to-use designs to strong and reliable backends — I build complete websites that work smoothly and deliver real results.</p>
                         <div className="flex flex-wrap gap-4">
                             <Button type="outline" title="Download Resume" />
                             <Button title="My Projects" />
