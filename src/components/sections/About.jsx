@@ -1,3 +1,4 @@
+import GaffarAli from "../../../public/gaffar-ali.jpg";
 import BootstrapIcon from "../../assets/skills/bootstrap.svg";
 import CssIcon from "../../assets/skills/css.svg";
 import GitIcon from "../../assets/skills/git.svg";
@@ -32,15 +33,11 @@ export default function About() {
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
                     <div className="w-20 h-1 bg-primary mx-auto"></div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="relative">
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-indigo-100 rounded-full z-0"></div>
                         <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-indigo-100 rounded-full z-0"></div>
-                        <img
-                            src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20young%20male%20developer%20in%20casual%20smart%20attire%2C%20sitting%20at%20desk%20with%20computer%2C%20creative%20workspace%2C%20modern%20office%20environment%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%2C%20realistic&width=600&height=700&seq=10&orientation=portrait"
-                            alt="About Me"
-                            className="rounded-lg shadow-xl z-10 relative object-cover w-full h-full"
-                        />
+                        <img src={GaffarAli} alt="About Me" className="rounded-lg shadow-xl z-10 relative object-cover w-full h-full" />
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">Who am I?</h3>

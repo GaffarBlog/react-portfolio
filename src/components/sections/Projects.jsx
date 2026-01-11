@@ -10,7 +10,7 @@ export default function Projects({ darkMode }) {
         {
             id: 1,
             title: "Aionic",
-            category: "Laravel",
+            category: "React",
             image: aionic,
             description: "Aionic is a ai music streaming platform that leverages artificial intelligence to curate personalized music experiences for users.",
             technologies: ["React", "Redux", "Inertia", "Laravel", "PostgreSQL"],
@@ -30,7 +30,7 @@ export default function Projects({ darkMode }) {
         {
             id: 3,
             title: "Comming Soon: School Management System",
-            category: "React",
+            category: "Vue",
             image: commingSoon,
             description: "Comprehensive platform for managing student records, attendance, and grades with user-friendly interface.",
             technologies: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
@@ -40,7 +40,7 @@ export default function Projects({ darkMode }) {
         {
             id: 4,
             title: "Comming Soon: Task Management App",
-            category: "React",
+            category: "Vue",
             image: commingSoon,
             description: "Organize and prioritize tasks with deadlines, reminders, and collaboration features for teams.",
             technologies: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
