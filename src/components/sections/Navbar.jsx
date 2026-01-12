@@ -1,4 +1,9 @@
-export default function Navbar({ darkMode, setDarkMode, isMenuOpen, setIsMenuOpen }) {
+import { useState } from "react";
+import { Toggler } from "../Toggler";
+
+export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <nav className={`fixed w-full  backdrop-blur-lg shadow-sm z-50 transition-colors duration-300 py-2`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,30 +13,31 @@ export default function Navbar({ darkMode, setDarkMode, isMenuOpen, setIsMenuOpe
                     </div>
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#home" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             Home
                         </a>
-                        <a href="#about" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#about" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             About
                         </a>
-                        <a href="#skills" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#skills" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             Skills
                         </a>
-                        <a href="#projects" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#projects" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             Projects
                         </a>
-                        <a href="#experience" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#experience" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             Experience
                         </a>
-                        <a href="#testimonials" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#testimonials" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             Testimonials
                         </a>
-                        <a href="#contact" className={`text-gray-300 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors`}>
+                        <a href="#contact" className="text-gray-800 hover:text-indigo-400 dark:text-gray-300 dark:hover:text-primary font-medium cursor-pointer transition-colors">
                             Contact
                         </a>
-                        <button onClick={() => setDarkMode(!darkMode)} className={`p-2 rounded-full bg-gray-700 text-yellow-400" : "bg-gray-200 text-gray-700"} transition-colors !rounded-button cursor-pointer`}>
+                        {/* <button onClick={() => setDarkMode(!darkMode)} className={`p-2 rounded-full bg-gray-700 text-yellow-400" : "bg-gray-200 text-gray-700"} transition-colors !rounded-button cursor-pointer`}>
                             <i className={`fas fa-sun" : "fa-moon"}`}></i>
-                        </button>
+                        </button> */}
+                        <Toggler />
                     </div>
                     {/* Mobile menu button */}
                     <div className="md:hidden flex items-center">

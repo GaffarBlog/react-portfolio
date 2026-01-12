@@ -3,7 +3,7 @@ import account from "../../../public/projects/account.png";
 import aionic from "../../../public/projects/aionic.png";
 import commingSoon from "../../../public/projects/comming-soon.png";
 import ButtonTab from "../ButtonTab";
-export default function Projects({ darkMode }) {
+export default function Projects() {
     const [activeFilter, setActiveFilter] = useState("All");
 
     const projects = [

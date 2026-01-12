@@ -2,7 +2,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-export default function Testimonials({ darkMode }) {
+export default function Testimonials() {
     const testimonials = [
         {
             id: 1,
