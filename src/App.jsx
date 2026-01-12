@@ -16,7 +16,7 @@ function App() {
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: "url('../../src/assets/bg-pattern3.png')",
+                        backgroundImage: "url('src/assets/bg-pattern3.png')",
                     }}
                 ></div>
             </div>
