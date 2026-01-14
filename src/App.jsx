@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/sections/About";
 import Contact from "./components/sections/Contact";
@@ -11,32 +10,22 @@ import Summary from "./components/sections/Summary";
 import Testimonials from "./components/sections/Testimonials";
 
 function App() {
-    const [darkMode, setDarkMode] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    }, [darkMode]);
-
     return (
         <main className={`min-h-screen bg-body dark:bg-gray-900 transition-colors duration-300 relative`}>
             <div className="absolute inset-0 opacity-[0.15] pointer-events-none">
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: "url('../../src/assets/bg-pattern3.png')",
+                        backgroundImage: "url('assets/bg-pattern3.png')",
                     }}
                 ></div>
             </div>
 
-            <Navbar setDarkMode={setDarkMode} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            <Navbar />
             <Hero />
             <Summary />
             <About />
-            {/* <Skills  /> */}
+            {/* <Skills /> */}
             <Projects />
             <Experience />
             <Testimonials />
